@@ -6,8 +6,8 @@ if [ ! -f sync.sh ]; then
 fi
 
 user="quaywestkitchen"
-server=ruggedfitness.ca
-[ "$server" ] || server="ruggedfitness.ca"
+server=quaywest.ca
+[ "$server" ] || server="quaywest.ca"
 
 rsync -av --delete \
         --exclude sync.sh \

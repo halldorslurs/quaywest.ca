@@ -4,8 +4,8 @@
  */
 
 body{
-/*	background-image:url('../images/bg-texture.png'); */
-
+	/*background-image:url('../images/ocean.jpg') no-repeat;
+    background-size: 100%;*/
 }
 
 div.container
@@ -23,11 +23,11 @@ div#inner-wrapper{
 
 div.header
 {
-	height:100px;
+	height:150px;
 	width:100%;
 	margin-top:20px;
-	/*border-bottom:1px Solid #333;
-	*/padding-bottom:10px;
+	/*border-bottom:1px Solid #333;*/
+	padding-bottom:10px;
 }
 div.header h3 {
 	float:left;
@@ -101,7 +101,6 @@ h1, h2, h3, p
 	{
 		float:left;
 		font-family: 'Reenie Beanie';
-		padding:4px;
 		padding-right:6px;
 		border-right:1px solid #666;
 		font-size:2em;
@@ -141,8 +140,8 @@ div.seperator{
     top:0;
     left:0;
     z-index:8;
-    height: 420px;
-    width: 420px;
+    height: 350px;
+    width: 350px;
 }
 
 #slideshow IMG.active {
