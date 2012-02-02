@@ -4,20 +4,7 @@
  */
 
 body{
-		background-image: linear-gradient(top, rgb(255,255,255) 10%, rgb(187,187,250) 49%);
-		background-image: -o-linear-gradient(top, rgb(255,255,255) 10%, rgb(187,187,250) 49%);
-		background-image: -moz-linear-gradient(top, rgb(255,255,255) 10%, rgb(187,187,250) 49%);
-		background-image: -webkit-linear-gradient(top, rgb(255,255,255) 10%, rgb(187,187,250) 49%);
-		background-image: -ms-linear-gradient(top, rgb(255,255,255) 10%, rgb(187,187,250) 49%);
-
-		background-image: -webkit-gradient(
-			linear,
-			left top,
-			left bottom,
-			color-stop(0.1, rgb(255,255,255)),
-			color-stop(0.49, rgb(187,187,250))
-		);
-		background-size:100% 200%;
+		
 }
 
 div.container
@@ -113,9 +100,9 @@ h1, h2, h3, p
 #nav-links li
 	{
 		float:left;
-		font-family: 'Verdana';
-		font-size: 0.95em;
-		font-weight: 120%;
+		font-family: 'Reenie Beanie';
+		font-size: 1.26em;
+		font-weight: 800;
 	}
 #nav-links li:hover
 	{
@@ -170,4 +157,29 @@ div.seperator{
 
 img.title_logo{
 	
+}
+#backgrounddefault{
+		/*background-image: linear-gradient(top, rgb(255,255,255) 10%, rgb(187,187,250) 49%);
+		background-image: -o-linear-gradient(top, rgb(255,255,255) 10%, rgb(187,187,250) 49%);
+		background-image: -moz-linear-gradient(top, rgb(255,255,255) 10%, rgb(187,187,250) 49%);
+		background-image: -webkit-linear-gradient(top, rgb(255,255,255) 10%, rgb(187,187,250) 49%);
+		background-image: -ms-linear-gradient(top, rgb(255,255,255) 10%, rgb(187,187,250) 49%);
+
+		background-image: -webkit-gradient(
+			linear,
+			left top,
+			left bottom,
+			color-stop(0.1, rgb(255,255,255)),
+			color-stop(0.49, rgb(187,187,250))
+		);
+		background-size:100% 200%;*/
+
+		background-image: url('../images/beachocean.jpg');
+		background-size: 100%;
+		background-repeat: no-repeat;
+}
+#backgroundnosidebar{
+		background-image: url('../images/beachocean.jpg');
+		background-size: 150%;
+		background-repeat: no-repeat;
 }
