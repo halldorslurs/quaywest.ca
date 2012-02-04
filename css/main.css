@@ -4,7 +4,8 @@
  */
 
 body{
-		
+	font: 1em/1.5 "Sabon Next W01 Display","Times New Roman",Times,serif;
+	color: #222;	
 }
 
 div.container
@@ -25,8 +26,6 @@ div.header
 	height:150px;
 	width:100%;
 	margin-top:20px;
-	/*border-bottom:1px Solid #333;*/
-	padding-bottom:10px;
 }
 div.header h3 {
 	float:left;
@@ -45,6 +44,7 @@ div.main-content
 		padding:20px;
 		margin:auto;
 		text-align:center;
+		margin-top:0px;
 	}
 
 div.main
@@ -90,7 +90,9 @@ h1, h2, h3, p
 
 .links
 {
+	margin-top:10px;
 	height:65px;
+
 }
 #nav-links
 	{
@@ -100,25 +102,29 @@ h1, h2, h3, p
 #nav-links li
 	{
 		float:left;
-		font-family: 'Reenie Beanie';
-		font-size: 1.26em;
-		font-weight: 800;
+		font-family: "Avenir LT W01 85 Heavy";
+		/*font-family: 'Reenie Beanie';*/
+		font-size: 1em;
+		letter-spacing: 0.05em;
+		font-weight: 400;
+		text-transform: center;
+		text-transform:uppercase;
 	}
-#nav-links li:hover
+#nav-links li a:hover
 	{
-		text-decoration:underline;
+		color: #999;
 	}
 #nav-links li a
 	{
-		float:left
-		display:block;
+		color: #272423;
+		display: block;
+		float:left;
 		text-decoration:none;	
-		color:#111;
 	}
+
 ul.contact-main
 {
 	width:300px;
-	font-family: 'Reenie Beanie';
 	font-size:25px;
 	list-style:none;
 	margin-top:-10px;
@@ -154,32 +160,20 @@ div.seperator{
 #slideshow IMG.last-active {
     z-index:9;
 }
-
-img.title_logo{
-	
+.social-icon{
+	height:40px;
+	width:40px;
+	float:left;
+	margin-top:3px;
+	margin-right:10px;
 }
-#backgrounddefault{
-		/*background-image: linear-gradient(top, rgb(255,255,255) 10%, rgb(187,187,250) 49%);
-		background-image: -o-linear-gradient(top, rgb(255,255,255) 10%, rgb(187,187,250) 49%);
-		background-image: -moz-linear-gradient(top, rgb(255,255,255) 10%, rgb(187,187,250) 49%);
-		background-image: -webkit-linear-gradient(top, rgb(255,255,255) 10%, rgb(187,187,250) 49%);
-		background-image: -ms-linear-gradient(top, rgb(255,255,255) 10%, rgb(187,187,250) 49%);
 
-		background-image: -webkit-gradient(
-			linear,
-			left top,
-			left bottom,
-			color-stop(0.1, rgb(255,255,255)),
-			color-stop(0.49, rgb(187,187,250))
-		);
-		background-size:100% 200%;*/
-
-		background-image: url('../images/beachocean.jpg');
-		background-size: 100%;
-		background-repeat: no-repeat;
+#social{
+	width:250px;
+	float:right;
+	margin-right:150px;	
 }
-#backgroundnosidebar{
-		background-image: url('../images/beachocean.jpg');
-		background-size: 150%;
-		background-repeat: no-repeat;
+
+#us_widget{
+	float:left;
 }
