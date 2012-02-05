@@ -3,8 +3,24 @@
  *				of erikjohnson.ca
  */
 
-body{
-		
+body
+{
+	font: 1em/1.5 "Sabon Next W01 Display","Times New Roman",Times,serif;
+	color: #222;
+	
+	background-image: linear-gradient(top, rgb(255,255,255) 10%, rgb(187,187,250) 49%);
+	background-image: -o-linear-gradient(top, rgb(255,255,255) 10%, rgb(187,187,250) 49%);
+	background-image: -moz-linear-gradient(top, rgb(255,255,255) 10%, rgb(187,187,250) 49%);
+	background-image: -webkit-linear-gradient(top, rgb(255,255,255) 10%, rgb(187,187,250) 49%);
+	background-image: -ms-linear-gradient(top, rgb(255,255,255) 10%, rgb(187,187,250) 49%);
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0.1, rgb(255,255,255)),
+		color-stop(0.49, rgb(187,187,250))
+	);
+	background-size:100% 250%;
 }
 
 div.container
@@ -25,8 +41,6 @@ div.header
 	height:150px;
 	width:100%;
 	margin-top:20px;
-	/*border-bottom:1px Solid #333;*/
-	padding-bottom:10px;
 }
 div.header h3 {
 	float:left;
@@ -41,10 +55,11 @@ div.header img{
 
 div.main-content
 	{
-	/*	height:400px;*/
-		padding:20px;
+	/*	height:400px;
+		padding:20px;*/
 		margin:auto;
 		text-align:center;
+		margin-top:-40px;
 	}
 
 div.main
@@ -89,97 +104,109 @@ h1, h2, h3, p
 /* Main links */
 
 .links
-{
+	{
+	margin-top:10px;
 	height:65px;
-}
+	}
 #nav-links
 	{
 		height:60px;
 		list-style:none;
-}
+	}
 #nav-links li
 	{
 		float:left;
-		font-family: 'Reenie Beanie';
-		font-size: 1.26em;
-		font-weight: 800;
+		font-family: "Avenir LT W01 85 Heavy";
+		/*font-family: 'Reenie Beanie';*/
+		font-size: 1em;
+		letter-spacing: 0.05em;
+		font-weight: 400;
+		text-transform: center;
+		text-transform:uppercase;
 	}
-#nav-links li:hover
+#nav-links li a:hover
 	{
-		text-decoration:underline;
+		color: #999;
 	}
 #nav-links li a
 	{
-		float:left
-		display:block;
+		color: #272423;
+		display: block;
+		float:left;
 		text-decoration:none;	
-		color:#111;
 	}
+
 ul.contact-main
-{
-	width:300px;
-	font-family: 'Reenie Beanie';
-	font-size:25px;
-	list-style:none;
-	margin-top:-10px;
-	margin-left:-30px;
-}
+	{
+		width:300px;
+		font-size:25px;
+		list-style:none;
+		margin-top:-10px;
+		margin-left:-30px;
+	}
 
-div.main-header{
-	height:500px;
-}
-div.seperator{
-	height:10px;
-}
+div.main-header
+	{
+		height:500px;
+	}
+div.seperator
+	{
+		height:10px;
+	}
 
-#slideshow {
-    position:relative;
-    height: 420px;
-    width: 420px;
-}
+#slideshow 
+	{
+		position:relative;
+		height: 420px;
+		width: 420px;
+	}
 
-#slideshow IMG {
-    position:absolute;
-    top:0;
-    left:0;
-    z-index:8;
-    height: 350px;
-    width: 350px;
-}
+#slideshow IMG 
+	{
+		position:absolute;
+		visibility:hidden;
+		top:0;
+		left:0;
+		right:0;
+		z-index:8;
+		max-height: 350px;
+		max-width: 350px;
+	}
 
-#slideshow IMG.active {
-    z-index:10;
-}
+#slideshow IMG.active 
+	{
+		height: auto;
+		width: auto;
+		visibility:visible;
+		z-index:10;
+		text-align: center;
+		margin-right: auto;
+		margin-left: auto;
+	}
 
-#slideshow IMG.last-active {
-    z-index:9;
-}
+#slideshow IMG.last-active 
+	{
+		visibility:hidden;
+		z-index:9;
+	}
 
-img.title_logo{
-	
-}
-#backgrounddefault{
-		/*background-image: linear-gradient(top, rgb(255,255,255) 10%, rgb(187,187,250) 49%);
-		background-image: -o-linear-gradient(top, rgb(255,255,255) 10%, rgb(187,187,250) 49%);
-		background-image: -moz-linear-gradient(top, rgb(255,255,255) 10%, rgb(187,187,250) 49%);
-		background-image: -webkit-linear-gradient(top, rgb(255,255,255) 10%, rgb(187,187,250) 49%);
-		background-image: -ms-linear-gradient(top, rgb(255,255,255) 10%, rgb(187,187,250) 49%);
+.social-icon
+	{
+		height:40px;
+		width:40px;
+		float:left;
+		margin-top:3px;
+		margin-right:10px;
+	}
 
-		background-image: -webkit-gradient(
-			linear,
-			left top,
-			left bottom,
-			color-stop(0.1, rgb(255,255,255)),
-			color-stop(0.49, rgb(187,187,250))
-		);
-		background-size:100% 200%;*/
+#social
+	{
+		width:250px;
+		float:right;
+		margin-right:150px;	
+	}
 
-		background-image: url('../images/beachocean.jpg');
-		background-size: 100%;
-		background-repeat: no-repeat;
-}
-#backgroundnosidebar{
-		background-image: url('../images/beachocean.jpg');
-		background-size: 150%;
-		background-repeat: no-repeat;
-}
+#us_widget
+	{
+		float:left;
+	}
